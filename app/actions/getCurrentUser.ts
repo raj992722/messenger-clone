@@ -1,7 +1,7 @@
 
 import {getSession} from './getSession';
 import prisma from '@/app/libs/prismadb';
-import { User } from '@prisma/client';
+// import { User } from '@prisma/client';
 
 
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { User } from "@prisma/client";
+// import { User } from "@prisma/client";
 import ReactSelect from  'react-select'
 
 interface SelectProps{

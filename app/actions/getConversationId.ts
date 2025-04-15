@@ -1,7 +1,7 @@
 import prisma from '@/app/libs/prismadb'
 
 import { getCurrentUser } from './getCurrentUser'
-import { exportTraceState } from 'next/dist/trace';
+// import { exportTraceState } from 'next/dist/trace';
 
 const getConversationId = async (conversationId:string) => {
  
@@ -20,6 +20,7 @@ const getConversationId = async (conversationId:string) => {
         });
         return conversation;
     } catch (error) {
+        console.log(error,"GET_CONVERSATION_ERROR")
         return null;
     }
 

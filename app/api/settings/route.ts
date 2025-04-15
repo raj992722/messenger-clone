@@ -1,5 +1,5 @@
 import { getCurrentUser } from "@/app/actions/getCurrentUser";
-import { Erica_One } from "next/font/google";
+// import { Erica_One } from "next/font/google";
 import { NextResponse } from "next/server";
 
 export async function POST(
@@ -27,7 +27,7 @@ try {
     });
 
     return NextResponse.json(updateUser);
-} catch ( error:any) {
+} catch ( error) {
     console.log(error,"ERROR_SETTINGS");
     return new NextResponse("Internal Error",{status:500})
 }

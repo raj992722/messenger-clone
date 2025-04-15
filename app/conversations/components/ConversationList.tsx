@@ -1,12 +1,12 @@
 'use client'
 
-import { Conversation, User } from '@prisma/client'
+import {  User } from '@prisma/client'
 import { FullConversationType } from '@/app/types/index';
 import { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import useConversation from '@/app/hooks/useConversation';
 import clsx from 'clsx';
-import { MdOutlineGroup, MdOutlineGroupAdd } from 'react-icons/md';
+import { MdOutlineGroupAdd } from 'react-icons/md';
 import ConversationBox from './ConversationBox';
 import Modal from '@/app/components/Modal';
 import GroupChatModal from './GroupChatModal';
